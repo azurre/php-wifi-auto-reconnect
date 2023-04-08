@@ -1,0 +1,23 @@
+{
+  "name": "azurre/php-wifi-daemon",
+  "description": "",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Aleksandr Milenin",
+      "email": "admin@azrr.info"
+    }
+  ],
+  "require": {
+    "azurre/php-shell": "*",
+    "azurre/php-simple-logger": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "license": "ISC"
+}

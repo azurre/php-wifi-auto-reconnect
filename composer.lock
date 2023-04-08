@@ -1,0 +1,161 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0df64b171d7e029e1e367babb22193d9",
+    "packages": [
+        {
+            "name": "azurre/php-shell",
+            "version": "2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/azurre/php-shell.git",
+                "reference": "76e4b082bb56e3fb95280dfb32fd5d0d8d7a5dee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/azurre/php-shell/zipball/76e4b082bb56e3fb95280dfb32fd5d0d8d7a5dee",
+                "reference": "76e4b082bb56e3fb95280dfb32fd5d0d8d7a5dee",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Azurre\\Component\\System\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Milenin",
+                    "email": "admin@azrr.info"
+                }
+            ],
+            "description": "A convenient none blocking asynchronous shell",
+            "homepage": "https://github.com/azurre/php-shell",
+            "keywords": [
+                "async",
+                "asynchronous",
+                "cmd",
+                "linux",
+                "none blocking",
+                "process",
+                "shell"
+            ],
+            "support": {
+                "issues": "https://github.com/azurre/php-shell/issues",
+                "source": "https://github.com/azurre/php-shell/tree/2.1"
+            },
+            "time": "2022-05-05T10:48:17+00:00"
+        },
+        {
+            "name": "azurre/php-simple-logger",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/azurre/php-simple-logger.git",
+                "reference": "a6ed190edd59eba148aacddf0a23288dd22d362a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/azurre/php-simple-logger/zipball/a6ed190edd59eba148aacddf0a23288dd22d362a",
+                "reference": "a6ed190edd59eba148aacddf0a23288dd22d362a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "^2.0",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Azurre\\Component\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Simple PSR-3 logger",
+            "homepage": "https://github.com/azurre/php-simple-logger/",
+            "keywords": [
+                "log",
+                "logger",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/azurre/php-simple-logger/tree/v1.0.3"
+            },
+            "time": "2021-06-23T18:51:59+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
