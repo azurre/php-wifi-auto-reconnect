@@ -16,18 +16,21 @@ Simple WiFi connection manager
 ```bash
 sudo apt update
 sudo apt install -y wireless-tools wpasupplicant isc-dhcp-common iproute2 psmisc iputils-ping
+wget wget https://github.com/azurre/php-wifi-auto-reconnect/releases/latest/download/wlan-mgr.phar
+# optional, replace `php wlan-mgr.phar` to `wlan-mgr`
+chmod +x wlan-mgr.phar && sudo move wlan-mgr.phar /usr/bin/wlan-mgr
 ```
 
 ## Usage
 
 ### Run wlan manager
 ```bash
-wlan-mgr
+sudo php wlan-mgr.phar
 ```
 
 ### Help
 ```bash
- wlan-mgr -h
+ php wlan-mgr.phar -h
 ```
 
 ```
@@ -46,7 +49,7 @@ php wlan-mgr -c=/etc/wpa_supplicant/config.json
 
 ### Dry-run
 ```bash
- sudo wlan-mgr --dry-run
+ sudo php wlan-mgr.phar --dry-run
 ```
 
 ```
