@@ -1,8 +1,8 @@
 <?php
 /**
- * @author Alex Milenin
+ * @author Aleksandr Milenin
  * @email  admin@azrr.info
- * @copyright Copyright (c)Alex Milenin (https://azrr.info/)
+ * @copyright Copyright (c)Aleksandr Milenin (https://azrr.info/)
  */
 
 namespace App\Component;

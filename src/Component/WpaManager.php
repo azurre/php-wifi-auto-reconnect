@@ -1,8 +1,8 @@
 <?php
 /**
- * @author Alex Milenin
+ * @author Aleksandr Milenin
  * @email  admin@azrr.info
- * @copyright Copyright (c)Alex Milenin (https://azrr.info/)
+ * @copyright Copyright (c)Aleksandr Milenin (https://azrr.info/)
  */
 
 namespace App\Component;
@@ -103,8 +103,8 @@ class WpaManager
     protected function setGatewayPriority(Gateway $gateway1, Gateway $gateway2): static
     {
         $cmd = 'ip r a default scope global';
-        $cmd .= " nexthop via $gateway1->ip dev $gateway1->iface weight $gateway1->priority";
-        $cmd .= " nexthop via $gateway2->ip dev $gateway2->iface weight $gateway2->priority";
+        $cmd .= " nexthop via $gateway1->ip dev $gateway1->iface weight $gateway1->priority onlink";
+        $cmd .= " nexthop via $gateway2->ip dev $gateway2->iface weight $gateway2->priority onlink";
 
         $shell = Shell::create()->run($cmd);
         $this->handleShellError($shell);
@@ -180,6 +180,12 @@ class WpaManager
     public function testKill(): bool
     {
         return !Shell::create()->run("$this->killBin -l")->getExitCode();
+    }
+
+    public function testLinkDown(): bool
+    {
+        $confFile = '/proc/sys/net/ipv4/conf/default/ignore_routes_with_linkdown';
+        return is_file($confFile) && (bool)file_get_contents($confFile);
     }
 
     /**

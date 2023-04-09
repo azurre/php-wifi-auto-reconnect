@@ -1,8 +1,8 @@
 <?php
 /**
- * @author Alex Milenin
+ * @author Aleksandr Milenin
  * @email  admin@azrr.info
- * @copyright Copyright (c)Alex Milenin (https://azrr.info/)
+ * @copyright Copyright (c)Aleksandr Milenin (https://azrr.info/)
  */
 
 namespace App\Component;
@@ -110,12 +110,13 @@ class Wlan
         $list = [
             'iwconfig (wireless-tools)' => $wirelessTools->testIwConfig(),
             'iwlist (wireless-tools)' => $wirelessTools->testIwlist(),
-            "Wlan interface ($iface)" => $iface && in_array($iface, $wlanList),
             'WPA Supplicant (wpasupplicant)' => $wpaManager->testBin(),
             'DHCP Client (isc-dhcp-common)' => $wpaManager->testDhcp(),
             'IP (iproute2)' => $wpaManager->testIp(),
             'KillAll (psmisc)' => $wpaManager->testKill(),
-            'Ping (iputils-ping)' => $ping->testBin()
+            'Ping (iputils-ping)' => $ping->testBin(),
+            "Wlan interface ($iface)" => $iface && in_array($iface, $wlanList),
+            'Ignore routes with linkdown' => $wpaManager->testLinkDown(),
         ];
         foreach ($list as $key => $result) {
             echo ($result ? Message::success('[+] ' . $key) : Message::error('[-] ' . $key)) . PHP_EOL;

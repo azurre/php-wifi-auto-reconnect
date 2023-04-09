@@ -1,7 +1,7 @@
 {
   "name": "azurre/php-wifi-daemon",
-  "description": "",
-  "version": "1.0",
+  "description": "Simple WiFi connection manager",
+  "version": "1.1",
   "authors": [
     {
       "name": "Aleksandr Milenin",

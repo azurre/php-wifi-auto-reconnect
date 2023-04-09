@@ -46,7 +46,7 @@ class App
         echo Message::success('  -h ') . "         Show help information\n";
         echo Message::success('  --dry-run ') . "  Check all the requirements\n";
         echo Message::warning('Example:') . "\n";
-        echo '  php ' . basename(APP_PATH) . " --dry-run\n\n";
+        echo '  php ' . basename(APP_PATH) . " -c=/etc/wpa_supplicant/config.json\n\n";
 
         return $this;
     }

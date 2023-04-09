@@ -3,7 +3,7 @@
 return [
     //'interface' => 'wlan0', // Set interface manually
     'gatewayMode' => 'default', // wlan / balanced / eth-priority / wlan-priority
-    'logLevel' => 'info',
+    'logLevel' => 'info', // debug / error
     'logFile' => './wlan.log',
     //'pingTimeout' => 0.2, // 200 ms
     'pingAddress' => '8.8.8.8',
